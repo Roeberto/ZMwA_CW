@@ -16,3 +16,42 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY org.eclipse.cdt.core 1 0 2026-04-10 02:45:17.722
 !MESSAGE Indexed 'sem6_zad0' (23 sources, 83 headers) in 4.23 sec: 5,747 declarations; 30,891 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0055%)
+!SESSION 2026-04-10 03:19:14.247 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pl_PL
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-04-10 03:19:24.972
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-04-10 03:19:24.974
+!MESSAGE Log4j2 initialized with config file C:\Users\admin\STM32CubeIDE\Zadania\ZMwA_CW\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-04-10 03:19:37.428
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-04-10 03:20:13.252
+!MESSAGE Indexed 'sem6_zad1' (25 sources, 120 headers) in 9.71 sec: 13,300 declarations; 74,928 references; 3 unresolved inclusions; 46 syntax errors; 171 unresolved names (0.19%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-04-10 03:20:18.963
+!MESSAGE Indexed 'sem6_zad2' (23 sources, 75 headers) in 5.66 sec: 11,445 declarations; 72,526 references; 3 unresolved inclusions; 45 syntax errors; 169 unresolved names (0.2%)
+!SESSION 2026-04-10 03:24:37.140 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pl_PL
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-04-10 03:24:51.685
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-04-10 03:24:51.688
+!MESSAGE Log4j2 initialized with config file C:\Users\admin\STM32CubeIDE\Zadania\ZMwA_CW\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-04-10 03:25:07.325
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-04-10 03:28:13.427
+!MESSAGE Indexed 'sem6_zad3' (25 sources, 85 headers) in 6.13 sec: 7,048 declarations; 50,600 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0035%)
