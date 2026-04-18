@@ -62,17 +62,16 @@ static void MX_TIM4_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
-void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
-  if (GPIO_Pin == S1_Pin)
+  if (htim->Instance == TIM4)
   {
-    if (brightness < 900) brightness += 100;
+    static int16_t step = 1;
+    brightness += step;
+    if (brightness >= 1000 || brightness == 0)
+      step = -step;
+    __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_1, brightness);
   }
-  else if (GPIO_Pin == S2_Pin)
-  {
-    if (brightness > 100) brightness -= 100;
-  }
-  __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_1, brightness);
 }
 
 
@@ -113,6 +112,7 @@ int main(void)
 
   HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_1);
   __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_1, brightness);
+  __HAL_TIM_ENABLE_IT(&htim4, TIM_IT_UPDATE);
 
   /* USER CODE END 2 */
 
